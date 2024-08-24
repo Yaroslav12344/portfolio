@@ -64,7 +64,7 @@
                 height="150"
               />
               <span class="skill__info">Skill info</span>
-              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT">
+              <input class="skill__button" type="submit" name="button_python" id = 'button_python' value="SHOW PROJECT">
             </li>
             <li class="skills-list__skill skill">
               <img
@@ -106,6 +106,16 @@
               <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
               <a class="project__link" href="">Открыть на GitHub</a>
           </div>
+          <script>
+            // var project_photo = document.getElementById("skills");
+
+            // function handleButtonClick() {
+            //   project_photo.scrollIntoView({ block: "center", behavior: "smooth" });
+            // }
+
+            // handleButtonClick()
+            document.getElementById("skills").scrollIntoView();
+          </script>
         {% endif %}
       </section>
       <!-- Секция с формой обратной связи -->
@@ -126,5 +136,16 @@
     <footer>
 
     </footer>
+    <script>
+      var project_photo = document.getElementById("skills");
+      var btn = document.getElementById("button_python");
+
+      function handleButtonClick() {
+        project_photo.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+
+      btn.addEventListener("click", handleButtonClick);
+    </script>
   </body>
+
 </html>

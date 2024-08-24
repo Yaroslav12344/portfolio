@@ -253,6 +253,7 @@ ul {
 
 .project__link:hover::after {
   width: 100%;
+  
 }
 
 .feedback {
